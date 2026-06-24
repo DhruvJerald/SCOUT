@@ -61,6 +61,8 @@ A modular RC rover built from cheap and easily available components and 3D print
 | **Steering Type** | Differential (Tank-style) |
 
 <img width="652" height="557" alt="WhatsApp Image 2024-11-15 at 03 26 55" src="https://github.com/user-attachments/assets/784a21f7-7bfa-4869-b989-292e860ef0c4" />
+
+
 simple and cheap dosent need to cross mach one just needs torque and keep the rover moving
 
 
