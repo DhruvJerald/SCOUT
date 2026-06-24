@@ -1,6 +1,6 @@
 THIS FIRMWARE ISNT TESTED YET
 
-# MSRP-1 Rover V3 — Technical Setup Guide
+# SCOUT SETUP FILE
 
 ---
 
@@ -19,7 +19,7 @@ THIS FIRMWARE ISNT TESTED YET
 11. Communication Protocol Reference
 12. Build and Test Sequence
 13. Fault Diagnosis
-14. What Changed from V2
+
 
 ---
 
@@ -1181,45 +1181,6 @@ step passes. Each step has a specific, observable pass/fail criterion.
 
 ---
 
-## 14. What Changed from V2
 
-```
-  Area              V2                         V3
-  ----              --                         --
-  BLE               not present                NimBLE-Arduino UART server
-                                               Nordic UART Service UUIDs
-                                               Telemetry via BLE notify
-                                               Commands via BLE write
 
-  Transport mgr     phone connects to          phone auto-selects BLE,
-                    ESP32 WiFi only            WiFi AP, or 4G relay
-                                               with automatic fallback
-
-  Battery saver     not present                WiFi OFF, OLED OFF, Fan OFF
-                    all components always on   BLE stays on
-                                               auto-triggers at 7.0V
-                                               manual via dashboard button
-
-  OLED display      shows voltage, current,    adds: active transport (BLE/WiFi)
-                    temp, fan, battery bar     adds: BLE client count
-                                               skipped in saver mode
-
-  Telemetry JSON    String heap allocation     char buffer on stack
-                    (fragmentation risk)       (no heap allocation at 10Hz)
-
-  Power commands    not present                {"type":"power","mode":"saver/normal"}
-                                               processCommand() handles
-                                               applyPowerMode() executes
-
-  Auto transport    not present                "transport" field in telemetry
-  reporting                                    shows "ble"/"wifi"/"none"
-                                               visible on OLED and dashboard
-
-  New library       --                         NimBLE-Arduino by h2zero
-  (install this)                               lighter than BlueDroid
-                                               coexists with WiFi on same radio
-```
-
----
-
-*End of MSRP-1 V3 Setup Guide*
+*-------------------------------------------------------------------------------------End-----------------------------------------------------------------------------*
