@@ -1,3 +1,4 @@
+<img width="589" height="833" alt="Screenshot 2026-06-25 233542" src="https://github.com/user-attachments/assets/c412a633-3a0c-42e1-b531-9bf9a19d7bf3" />
 
 
 
@@ -7,6 +8,11 @@ A modular RC rover built from cheap and easily available components and 3D print
 
 
 <img width="1920" height="1080" alt="rovah" src="https://github.com/user-attachments/assets/00bb53da-2263-4230-8190-7b21b68df76f" />
+
+
+
+<img width="1920" height="1080" alt="dsa" src="https://github.com/user-attachments/assets/7b8ea1f7-f10d-40bc-89fd-80195fb45253" />
+
 
 
 **GOAL**
