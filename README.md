@@ -1,4 +1,4 @@
-##IMPORTANT NOTE:- A MAJORITY OF THIS DOC IS AI GENERATED FROM THE FIRMWARE ONCE I BUILD THE PROJECT WITH THE ACTUAL FIRMWARE I WILL UPDATE THIS README WITH ACCURATE INFO
+
 
 # SCOUT
 A modular RC rover built from cheap and easily available components and 3D printed parts, designed to use a phone for live‑streaming video while leveraging onboard cellular connectivity to transmit data and telemetry to a homebase
