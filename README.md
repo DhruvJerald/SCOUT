@@ -1,7 +1,13 @@
 
 
+
+
 # SCOUT
 A modular RC rover built from cheap and easily available components and 3D printed parts, designed to use a phone for live‑streaming video while leveraging onboard cellular connectivity to transmit data and telemetry to a homebase
+
+[A5 - 1.pdf](https://github.com/user-attachments/files/29351500/A5.-.1.pdf)
+
+
 
 
 <img width="1920" height="1080" alt="rovah" src="https://github.com/user-attachments/assets/00bb53da-2263-4230-8190-7b21b68df76f" />
