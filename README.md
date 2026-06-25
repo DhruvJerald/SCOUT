@@ -1,3 +1,5 @@
+##IMPORTANT NOTE:- A MAJORITY OF THIS DOC IS AI GENERATED FROM THE FIRMWARE ONCE I BUILD THE PROJECT WITH THE ACTUAL FIRMWARE I WILL UPDATE THIS README WITH ACCURATE INFO
+
 # SCOUT
 A modular RC rover built from cheap and easily available components and 3D printed parts, designed to use a phone for live‑streaming video while leveraging onboard cellular connectivity to transmit data and telemetry to a homebase
 
@@ -20,7 +22,6 @@ A modular RC rover built from cheap and easily available components and 3D print
 | Attribute | Specification |
 |-----------|---------------|
 | **Project Name** | SCOUT |
-| **Version** | V1.0 |
 | **Type** | 4WD Exploration Rover |
 | **Chassis Material** | 3D Printed PLA (White) |
 | **Chassis Dimensions** | 255mm × 200mm × 100mm |
@@ -40,8 +41,7 @@ A modular RC rover built from cheap and easily available components and 3D print
 | **Length** | 255 mm |
 | **Width** | 200 mm |
 | **Height** | 100 mm |
-| **Material** | PLA (Polylactic Acid) |
-| **Print Settings** | Layer Height: 0.2mm, Infill: 20-40% |
+| **Material** | PLA (Polylactic Acid) Or PETG preferrably (Polyethylene Terephthalate Glycol) |
 | **Color** | White |
 
 <img width="1210" height="826" alt="Screenshot 2026-06-21 131621" src="https://github.com/user-attachments/assets/fe315a38-8868-4af9-9a89-1f47d28c5cb2" />
@@ -52,13 +52,11 @@ A modular RC rover built from cheap and easily available components and 3D print
 | Component | Specification |
 |-----------|---------------|
 | **Motors** | 4× 12V Geared DC Motors |
-| **Motor MAX RPM** | 200 RPM @ 12V |
-| **ESTIMATED RPM** | ~123 RPM @ 7.4V |
+| **Motor MAX RPM** | 200 RPM at full (12V) |
+| **ESTIMATED RPM** | ~123 RPM at current battery (7.4V) |
 | **Motor Type** | Metal Geared (Yellow/Green) |
 | **Wheel Diameter** | 85 mm |
-| **Wheel Type** | Plastic Hub + Rubber Tire |
-| **Drive Type** | 4WD (All-wheel drive) |
-| **Steering Type** | Differential (Tank-style) |
+| **Steering Type** | Differential (Tank-style/Turn in place) |
 
 <img width="652" height="557" alt="WhatsApp Image 2024-11-15 at 03 26 55" src="https://github.com/user-attachments/assets/784a21f7-7bfa-4869-b989-292e860ef0c4" />
 
@@ -77,9 +75,9 @@ simple and cheap dosent need to cross mach one just needs torque and keep the ro
 | **Battery Chemistry** | Li-Ion (NMC 18650) |
 | **Discharge Rate** | 3C |
 | **Battery Connector** | XT60/DC Jack |
-| **BMS** | Integrated |
-| **Power Switch** | Rocker Switch (≥5A) |
-| **Buck Converter** | LM2596 (7.4V → 5V, 3A) |
+| **BMS** | Integrated within battery |
+| **Power Switch** | Rocker Switch  |
+| **Buck Converter** | LM2596 (7.4V -> 5V, |
 | **Charger** | 2S Li-ion Charger (8.4V 1A) |
 
 ### Power Distribution
@@ -101,17 +99,7 @@ Battery 7.4V
               └── 4× DC Motors
 ```
 
-### THEORATICAL Runtime 
 
-| Condition | Current Draw | Runtime (6000mAh) |
-|-----------|--------------|-------------------|
-| **Idle** (WiFi, sensors) | ~300mA | **20 hours** |
-| **Light Driving** | ~600mA | **10 hours** |
-| **Normal Driving** | ~1000mA | **6 hours** |
-| **Heavy Driving** | ~1800mA | **3.3 hours** |
-| **Battery Saver** | ~150mA | **40 hours** |
-
----
 
 <img width="1420" height="632" alt="ESP32-WROOM-32_1" src="https://github.com/user-attachments/assets/a12c48b9-3fb5-4977-be14-e911bb716506" />
 
@@ -181,7 +169,7 @@ ssd1306 OLED
 TOTAL PRICE-₹7875(85$)
 
 85 dollars may seem like a lot which it is but lot of these components are easily found in old electronics like capacitors,resistors,M3 screws,Perfboards,Brushless DC fans,Mosfets and etc.
-Just from me salvaging old electronics im able to replicate this project in around 40$
+
 
 <img width="1282" height="828" alt="Schematic_Rover-Scheme1_2026-06-05" src="https://github.com/user-attachments/assets/0d0c123a-ad87-43aa-9124-d182ff4040d1" />
 
@@ -223,4 +211,4 @@ Just from me salvaging old electronics im able to replicate this project in arou
 
 ---
 
-**Why did i make this project?**
+
