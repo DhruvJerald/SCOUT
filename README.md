@@ -1,6 +1,8 @@
 <div align="center">
 
 # SCOUT
+<img width="666" height="375" alt="rover-removebg-preview" src="https://github.com/user-attachments/assets/4bab35ab-d2d3-4475-a19b-1955650a718c" />
+
 
 **A modular 4WD exploration rover built from cheap, repairable parts**
 
@@ -48,34 +50,8 @@ The whole chassis is 3D printed in PLA and held together exclusively with M3 scr
 
 ## Architecture
 
-```
-┌─────────────┐        internet        ┌──────────────────┐
-│   PC / Home │ ◄────────────────────► │   Cloud Relay    │
-│   Browser   │                        │   (Node.js VPS)  │
-└─────────────┘                        └────────┬─────────┘
-                                                │
-                                             4G / WiFi
-                                                │
-                                       ┌────────▼─────────┐
-                                       │  Phone (on rover) │
-                                       │  Camera · GPS     │
-                                       │  IMU · Hotspot    │
-                                       └────────┬─────────┘
-                                                │
-                                      BLE  ─────┤───── WiFi AP
-                                                │
-                                       ┌────────▼─────────┐
-                                       │      ESP32        │
-                                       │  Motor control    │
-                                       │  Sensors · OLED   │
-                                       └────────┬─────────┘
-                                                │
-                              ┌─────────────────┼─────────────────┐
-                              │                 │                 │
-                        TB6612 #1          TB6612 #2          INA219
-                        LF + LR            RF + RR            DHT22
-                        motors             motors             OLED
-```
+<img width="1190" height="894" alt="1" src="https://github.com/user-attachments/assets/d518493c-3983-4eab-9a86-a07f1d825c37" />
+
 
 ### Power Distribution
 
