@@ -18,7 +18,7 @@
 
 ## What it is
 
-SCOUT is a remote-controlled ground rover designed to be driven from anywhere in the world. The phone mounted on the roof does the heavy lifting — streaming video, providing GPS, accelerometer, gyroscope, and cellular data — while the ESP32 handles motors, sensors, and real-time control.
+SCOUT is a RC ground rover designed to be driven from anywhere in the world. The phone mounted in the chasis does the heavy lifting such as streaming video, providing GPS, accelerometer, gyroscope, and cellular data while the ESP32 handles motors, sensors, and realtime control.
 
 The whole chassis is 3D printed in PLA and held together exclusively with M3 screws. No glue. No zip ties. Every part is replaceable.
 
@@ -29,7 +29,7 @@ The whole chassis is 3D printed in PLA and held together exclusively with M3 scr
 - **Repairable first** — M3 screws throughout, mounting holes everywhere, modular boards
 - **Phone as compute** — SIM, camera, GPS, IMU all from a phone you already own
 - **Cheap and sourceable** — every component available on Amazon.in or Robu.in
-- **Controllable from anywhere** — WiFi AP, Bluetooth, or 4G cloud relay
+- **Controllable from anywhere but maintain fastest connectivity** — WiFi AP, Bluetooth, or 4G cloud relay
 
 ---
 
@@ -52,23 +52,6 @@ The whole chassis is 3D printed in PLA and held together exclusively with M3 scr
 
 <img width="1190" height="894" alt="1" src="https://github.com/user-attachments/assets/d518493c-3983-4eab-9a86-a07f1d825c37" />
 
-
-### Power Distribution
-
-```
-Battery 7.4V
-    │
-    ├── Power Switch ── LM2596 ── 5V Rail ── ESP32
-    │                                    ── TB6612 logic
-    │                                    ── INA219
-    │                                    ── OLED
-    │                                    ── DHT22
-    │                                    ── Fan
-    │
-    └── TB6612 VM (motor rail) ── 4× DC Motors
-```
-
----
 
 ## Control Modes
 
@@ -196,41 +179,4 @@ Software upgrades possible once hardware is stable: waypoint navigation, obstacl
 
 ---
 
-## Build and flash
 
-Requirements: Arduino IDE 2.x, ESP32 board support, the following libraries:
-
-```
-NimBLE-Arduino        h2zero
-ESPAsyncWebServer     lacamera
-AsyncTCP              dvarrel
-Adafruit SSD1306      Adafruit
-Adafruit GFX Library  Adafruit
-Adafruit INA219       Adafruit
-DHT sensor library    Adafruit
-Adafruit Unified Sensor  Adafruit
-ArduinoJson           Benoit Blanchon
-```
-
-Flash `esp32/scout_firmware.ino`. Open Serial Monitor at 115200 baud and verify all `[BOOT]` lines appear before connecting hardware.
-
-Full wiring, pin assignments, fault diagnosis, and step-by-step test sequence are in [`SETUP.md`](./SETUP_V3.md).
-
----
-
-## Status
-
-<!-- Update this as you build -->
-
-- [ ] Chassis printed
-- [ ] Electronics wired and tested
-- [ ] Firmware flashed and verified
-- [ ] WiFi control working
-- [ ] BLE control working
-- [ ] Phone dashboard working
-- [ ] 4G relay working
-- [ ] First outdoor run
-
----
-
-*Personal project. Parts sourced from Amazon.in and Robu.in. Chassis designed in [your CAD tool].*
