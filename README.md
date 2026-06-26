@@ -6,7 +6,7 @@
 
 **A modular 4WD exploration rover built from cheap, repairable parts**
 
-*Uses a phone for camera, GPS, cellular, and IMU — no expensive standalone modules*
+
 
 ---
 
@@ -16,11 +16,14 @@
 
 ---
 
-## What it is
+## What is it?
 
 SCOUT is a RC ground rover designed to be driven from anywhere in the world. The phone mounted in the chasis does the heavy lifting such as streaming video, providing GPS, accelerometer, gyroscope, and cellular data while the ESP32 handles motors, sensors, and realtime control.
 
 The whole chassis is 3D printed in PLA and held together exclusively with M3 screws. No glue. No zip ties. Every part is replaceable.
+
+## Why did i make it?
+I noticed while everyone has phones which are made of expensive components like IMUs, GPS, SIM, Cameras, Displays, Microphone, Speakers it seems like a waste to buy such parts individually and not use the phone for its components and processing power.
 
 ---
 
@@ -29,7 +32,7 @@ The whole chassis is 3D printed in PLA and held together exclusively with M3 scr
 - **Repairable first** — M3 screws throughout, mounting holes everywhere, modular boards
 - **Phone as compute** — SIM, camera, GPS, IMU all from a phone you already own
 - **Cheap and sourceable** — every component available on Amazon.in or Robu.in
-- **Controllable from anywhere but maintain fastest connectivity** — WiFi AP, Bluetooth, or 4G cloud relay
+- **Controllable from anywhere but maintain fastest connectivity** — WiFi AP, Bluetooth, or 4G cloud relay (fastest connection is made)
 
 ---
 
@@ -108,7 +111,7 @@ The phone bridges all three. It picks the fastest available path automatically.
 
 ---
 
-## BOM (India)
+## BOM 
 
 | Item | Price (INR) |
 |------|------------|
@@ -137,7 +140,7 @@ The phone bridges all three. It picks the fastest available path automatically.
 | White PLA 1kg | 899 |
 | **Total** | **~₹7,875** |
 
-> Many of these — capacitors, resistors, perfboard, fan, MOSFET — can be salvaged from old electronics.
+> Many of these :- capacitors, resistors, perfboard, fan, MOSFET — >can be salvaged from old electronics.
 
 ---
 
@@ -152,7 +155,7 @@ The phone bridges all three. It picks the fastest available path automatically.
 - Live voltage, current, and power via INA219
 - Ambient temperature and humidity via DHT22
 - Status display on SSD1306 OLED
-- All telemetry streamed to phone dashboard
+- All telemetry streamed to PC dashboard
 
 **Expansion**
 
@@ -171,11 +174,21 @@ Software upgrades possible once hardware is stable: waypoint navigation, obstacl
 
 ## Images
 
-<!-- Add your own photos here -->
+<img width="1920" height="1080" alt="Untitled" src="https://github.com/user-attachments/assets/be50580b-9adf-422a-95dc-94cb3671b728" />
 
 ![chassis render](https://github.com/user-attachments/assets/c412a633-3a0c-42e1-b531-9bf9a19d7bf3)
 
 ![second render](https://github.com/user-attachments/assets/7b8ea1f7-f10d-40bc-89fd-80195fb45253)
+
+<img width="1920" height="1080" alt="SIDE" src="https://github.com/user-attachments/assets/01174261-f2e5-4899-bad6-86e21faecbc9" />
+
+<img width="1191" height="872" alt="Screenshot 2026-06-20 171409" src="https://github.com/user-attachments/assets/a7a3f5fb-b938-49da-b097-1526e166bd79" />
+
+<img width="1370" height="720" alt="Screenshot 2026-06-07 170747" src="https://github.com/user-attachments/assets/97f8afd9-ea4d-438c-99db-1f1b252c59df" />
+
+<img width="1425" height="547" alt="Screenshot 2026-06-24 152214" src="https://github.com/user-attachments/assets/f971fea5-c02f-495b-b47a-613e151041ec" />
+
+
 
 ---
 
