@@ -100,7 +100,7 @@ I really liked the idea of using the phones IMU, Accelerometer, GPS, Cellular co
 The chassis has mounting holes and an I2C header for adding modules without redesigning anything so any future extension can be connected to the extension port and the new code could be compiled to work with it
 
 ---
-## How to build it
+## Assembly instructions
 
 1)Gather all components listed in the BOM and a Android device with a working SIM card with cellular connection
 
