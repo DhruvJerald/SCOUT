@@ -4,7 +4,7 @@
 <img width="666" height="375" alt="rover-removebg-preview" src="https://github.com/user-attachments/assets/4bab35ab-d2d3-4475-a19b-1955650a718c" />
 
 
-**A modular 4WD exploration rover built from cheap, repairable parts**
+**A Rover built from cheap and easily available parts**
 
 
 
@@ -18,90 +18,34 @@
 
 ## What is it?
 
-SCOUT is a RC ground rover designed to be driven from anywhere in the world. The phone mounted in the chasis does the heavy lifting such as streaming video, providing GPS, accelerometer, gyroscope, and cellular data while the ESP32 handles motors, sensors, and realtime control.
-
-The whole chassis is 3D printed in PLA and held together exclusively with M3 screws. No glue. No zip ties. Every part is replaceable.
+It's a RC rover that can be controlled from nearly everywhere. The idea follows a phone mounted in the chassis that does the heavy lifting such as streaming video, providing GPS, accelerometer, gyroscope, and cellular data while the ESP32 handles motors, sensors, and near Realtime control.
+The entire rover has M3 mounting holes all over and doesn't use and glues or zip ties to make the final project closer to a product than a mere prototype and also being 3D printed in PLA.
 
 ## Why did i make it?
-I noticed while everyone has phones which are made of expensive components like IMUs, GPS, SIM, Cameras, Displays, Microphone, Speakers it seems like a waste to buy such parts individually and not use the phone for its components and processing power.
+I really liked the idea of using the phones IMU, Accelerometer, GPS, Cellular connectivity, Camera, Microphone, Speakers, Flashlight and the onboard CPU of a phone which is really compact and possess a lot of expensive features of a real rover which would cost a fortune to source individual parts and i wanted to build a rover at a fraction of the price
 
 ---
 
 ## Goals
 
-- **Repairable first** — M3 screws throughout, mounting holes everywhere, modular boards
-- **Phone as compute** — SIM, camera, GPS, IMU all from a phone you already own
-- **Cheap and sourceable** — every component available on Amazon.in or Robu.in
-- **Controllable from anywhere but maintain fastest connectivity** — WiFi AP, Bluetooth, or 4G cloud relay (fastest connection is made)
+- **Repairable first** — Should be easy to make changes(spacious), Should be easy to mount things (M3 mounts), Should allow for future additions (Future proof with additional GPIO extensions)
+- **Phone as compute** — SIM, Camera, GPS, IMU, Microphone, Speaker, Display, Accelerometer (All from a cheap android)
+- **Cheap and sourceable** — every component available on Amazon.in or Robu.in or can be salvaged from old electronics
+- **Controllable from anywhere but maintain fastest connectivity** — (fastest connection is made) between WIFI-AP, 4G cellular and Bluetooth
 
 ---
 
-## Specs
 
-| | |
-|---|---|
-| **Chassis** | 3D printed PLA — 255 × 210 × 114 mm |
-| **Weight** | ~1.5 – 2.0 kg |
-| **Payload** | ~2 – 3 kg |
-| **Motors** | 4× 12V 200 RPM geared DC (metal gear) |
-| **Estimated speed** | ~123 RPM at 7.4V battery |
-| **Steering** | Differential (tank style, turns in place) |
-| **Wheels** | 85 mm rubber |
-| **Battery** | 7.4V 6000mAh 2S LiPo with BMS |
 
 ---
 
-## Architecture
+## Design
 
 <img width="1190" height="894" alt="1" src="https://github.com/user-attachments/assets/d518493c-3983-4eab-9a86-a07f1d825c37" />
 
 
-## Control Modes
 
-| Mode | Transport | Range | Latency |
-|------|-----------|-------|---------|
-| WiFi AP | Direct to ESP32 | ~50m open air | 20 – 50ms |
-| Bluetooth | BLE serial | ~10m | 10 – 30ms |
-| 4G Cloud | Internet relay via VPS | Unlimited | 100 – 300ms |
 
-The phone bridges all three. It picks the fastest available path automatically.
-
----
-
-## Hardware
-
-### Electronics
-
-| Component | Purpose | Qty |
-|-----------|---------|-----|
-| ESP32 DevKit V1 | Main controller | 1 |
-| TB6612FNG | Dual motor driver | 2 |
-| INA219 | Voltage + current monitor | 1 |
-| DHT22 | Temperature + humidity | 1 |
-| SSD1306 OLED 0.96" | Status display | 1 |
-| LM2596 buck converter | 7.4V → 5V | 1 |
-| AO3400A MOSFET | Fan control | 1 |
-| 5V brushless fan 40mm | Cooling | 1 |
-
-### Drive
-
-| Component | Qty |
-|-----------|-----|
-| 12V 200RPM geared DC motor (metal gear) | 4 |
-| 85mm rubber wheels | 4 |
-| 7.4V 6000mAh 2S LiPo + BMS | 1 |
-| XT60 connector pair | 1 |
-
-### Chassis
-
-| Component | Qty |
-|-----------|-----|
-| White PLA 1kg | 1 |
-| M3 screw kit (assorted) | 1 set |
-| M3 standoffs | 20 |
-| 12×8 perfboard | 1 |
-
-> All mechanical connections use M3 screws only. The chassis has mounting holes throughout for future modules.
 
 ---
 
@@ -145,30 +89,34 @@ The phone bridges all three. It picks the fastest available path automatically.
 ---
 
 ## Features
-
-**Safety**
-- Motor watchdog — stops motors after 500ms with no signal
-- Emergency stop — software command and hardware switch
-- Battery saver mode — shuts down WiFi, OLED, and fan when voltage drops
-
-**Monitoring**
-- Live voltage, current, and power via INA219
-- Ambient temperature and humidity via DHT22
+- Battery saver mode — shuts down OLED, Fan,other non crucial sensors
+- Live voltage, current, and power via INA219 
+- Ambient temperature to keep control of overheating within the rover 
 - Status display on SSD1306 OLED
-- All telemetry streamed to PC dashboard
+- All telemetry streamed to PC/Phone dashboard (web dashboard)
 
 **Expansion**
 
-The chassis has mounting holes and an I2C header for adding modules without redesigning anything.
+The chassis has mounting holes and an I2C header for adding modules without redesigning anything so any future extension can be connected to the extension port and the new code could be compiled to work with it
 
-| Category | Possible additions |
-|----------|--------------------|
-| Navigation | GPS module, IMU, ultrasonic, LiDAR |
-| Vision | ESP32-CAM for wider FOV |
-| Actuation | Servo arm, LED strip |
-| Environment | Air quality, CO2 sensor |
+---
+## How to build it
 
-Software upgrades possible once hardware is stable: waypoint navigation, obstacle avoidance, ROS2 integration, data logging to phone storage.
+1)Gather all components listed in the BOM and a Android device with a working SIM card with cellular connection
+
+2)3D print all the parts from https://github.com/DhruvJerald/SCOUT/tree/956e7d2e782e086f435cfa4e5dd025103bdec9e7/3D%20Prints and assemble it with M3 screws 
+
+3)Add the Perfboard and the Electronics to the enclosure with M3 standoffs
+
+4)Wire it according to the schematic https://github.com/DhruvJerald/SCOUT/blob/956e7d2e782e086f435cfa4e5dd025103bdec9e7/Schematic_Rover.png
+
+5)Upload the firmware to the ESP (Not current one as its AI made and purely for proof of concept and not to be used in the final build_
+
+6)Set up VPS on PC side
+
+7)run the code on both devices 
+
+
 
 ---
 
