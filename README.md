@@ -89,11 +89,11 @@ I really liked the idea of using the phones IMU, Accelerometer, GPS, Cellular co
 ---
 
 ## Features
-- Battery saver mode — shuts down OLED, Fan,other non crucial sensors
-- Live voltage, current, and power via INA219 
-- Ambient temperature to keep control of overheating within the rover 
-- Status display on SSD1306 OLED
-- All telemetry streamed to PC/Phone dashboard (web dashboard)
+- Battery saver mode — shuts down OLED, Fan, other non crucial sensors
+- live voltage, current, and power from INA219 
+- temperature data to keep control of overheating within the rover 
+- status display on SSD1306 OLED
+- all telemetry streamed to PC/Phone dashboard (web dashboard)
 
 **Expansion**
 
@@ -110,7 +110,7 @@ The chassis has mounting holes and an I2C header for adding modules without rede
 
 4)Wire it according to the schematic https://github.com/DhruvJerald/SCOUT/blob/956e7d2e782e086f435cfa4e5dd025103bdec9e7/Schematic_Rover.png
 
-5)Upload the firmware to the ESP (Not current one as its AI made and purely for proof of concept and not to be used in the final build_
+5)Upload the firmware to the ESP (Not current one as its AI made and purely for proof of concept and not to be used in the final build)
 
 6)Set up VPS on PC side
 
