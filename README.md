@@ -84,7 +84,7 @@ I really liked the idea of using the phones IMU, Accelerometer, GPS, Cellular co
 | Phone mount (rubber bands) | 150 | $1.59 |
 | 2S LiPo charger | 676 | $7.16 |
 | White PLA 1kg | 899 | $9.51 |
-| **Total** | **~₹7,875** | **~$85 ** |
+| **Total** | **~₹7,875** | **~$85** |
 
 
 > Many of these :- capacitors, resistors, perfboard, fan, MOSFET — >can be salvaged from old electronics.
