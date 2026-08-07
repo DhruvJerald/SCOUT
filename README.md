@@ -57,32 +57,35 @@ I really liked the idea of using the phones IMU, Accelerometer, GPS, Cellular co
 
 ## BOM 
 
-| Item | Price (INR) |
-|------|------------|
-| ESP32 DevKit V1 | 409 |
-| 7.4V 6000mAh 2S LiPo | 1199 |
-| XT60 connector pair | 260 |
-| Rocker switch | 45 |
-| LM2596 buck converter | 98 |
-| TB6612FNG × 2 | 249 |
-| INA219 | 275 |
-| SSD1306 OLED | 329 |
-| 5V brushless fan | 180 |
-| AO3400A MOSFET | 84 |
-| Resistors (10kΩ + 100Ω) | 154 |
-| Capacitors (1000µF + 100µF × 2 + 0.1µF × 2) | 247 |
-| M3 screw kit | 360 |
-| 12V 200RPM motors × 4 | 500 |
-| DHT22 | 160 |
-| JST-XH connectors | 109 |
-| 18AWG silicone wire | 300 |
-| 85mm wheels × 4 | 749 |
-| M3 standoffs | 300 |
-| Perfboard | 125 |
-| Phone mount (rubber bands) | 150 |
-| 2S LiPo charger | 676 |
-| White PLA 1kg | 899 |
-| **Total** | **~₹7,875** |
+## BOM  
+
+| Item | Price (INR) | Price (USD) |
+|------|-------------|-------------|
+| ESP32 DevKit V1 | 409 | $4.40 |
+| 7.4V 6000mAh 2S LiPo | 1199 | $12.70 |
+| XT60 connector pair | 260 | $2.75 |
+| Rocker switch | 45 | $0.48 |
+| LM2596 buck converter | 98 | $1.04 |
+| TB6612FNG × 2 | 249 | $2.64 |
+| INA219 | 275 | $2.92 |
+| SSD1306 OLED | 329 | $3.50 |
+| 5V brushless fan | 180 | $1.91 |
+| AO3400A MOSFET | 84 | $0.89 |
+| Resistors (10kΩ + 100Ω) | 154 | $1.63 |
+| Capacitors (1000µF + 100µF × 2 + 0.1µF × 2) | 247 | $2.61 |
+| M3 screw kit | 360 | $3.81 |
+| 12V 200RPM motors × 4 | 500 | $5.29 |
+| DHT22 | 160 | $1.69 |
+| JST-XH connectors | 109 | $1.15 |
+| 18AWG silicone wire | 300 | $3.17 |
+| 85mm wheels × 4 | 749 | $7.93 |
+| M3 standoffs | 300 | $3.17 |
+| Perfboard | 125 | $1.32 |
+| Phone mount (rubber bands) | 150 | $1.59 |
+| 2S LiPo charger | 676 | $7.16 |
+| White PLA 1kg | 899 | $9.51 |
+| **Total** | **~₹7,875** | **~$85 ** |
+
 
 > Many of these :- capacitors, resistors, perfboard, fan, MOSFET — >can be salvaged from old electronics.
 
