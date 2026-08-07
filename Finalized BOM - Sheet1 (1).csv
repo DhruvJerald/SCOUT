@@ -1,0 +1,28 @@
+Category,Item,Qty,Notes/Specs,Seller Link,Price (INR),Price (USD)
+Main Controller,ESP32 DevKit V1,1,DevKit V1,https://robu.in/product/esp-wroom-32-wifi-bluetooth-networking-smart-component-development-board/,409,4.40
+Power,7.4V 6000mAh 2S LiPo,1,With BMS,https://robu.in/product/pro-range-nmc-18650-7-4v-6000mah-3c-2s2p-li-ion-battery-pack/,1199,12.70
+Power,XT60 connector pair,1,Male+Female,https://www.amazon.in/Robocraze-XT60-Connector-Pair/dp/B07Q7VZ716/,260,2.75
+Power,Rocker switch ≥5A,1,Toggle type,https://www.amazon.in/Rocker-Switch-Toggle-Plastic-Electronics/dp/B0GWS1MJB6/,45,0.48
+Power,LM2596 Buck Converter,1,7.4V→5V,https://www.amazon.in/LM2596-DC-DC-Buck-Converter-Module/dp/B009P04YTO/,98,1.04
+Motor Drivers,TB6612FNG,2,Dual driver,Robu Services,249,2.64
+Monitoring,INA219,1,Current sensor,https://www.amazon.in/xcluma-INA219-I2C-Bi-Directional/dp/B07YNQSLKX/,275,2.92
+Monitoring,SSD1306 OLED 0.96",1,I2C OLED,https://www.amazon.in/Robocraze-Semiconductor-Accessory-Display/dp/B07Q7VZ716/,329,3.50
+Cooling,5V brushless fan (30–40mm),1,Exhaust fan,https://www.amazon.in/Electronic-Spices-40x40x10mm-Brushless-Exhaust/dp/B0BC8FLML8/,180,1.91
+Cooling,AO3400A MOSFET,1,Logic-level,https://www.amazon.in/AO3400-30V-5-8A-N-Channel-Mosfet/dp/B09VH1K4GW/,84,0.89
+Cooling,10kΩ resistor,1,Gate pulldown,https://www.amazon.in/10K-ohm-Watt-Resistor-Tolerance/dp/B09VH1K4GW/,74,0.78
+Capacitors,1000µF 16V electrolytic,1,Main rail,https://www.amazon.in/gp/product/B08X2PGPPV/,89,0.94
+Capacitors,100µF 16V electrolytic,2,TB6612 rails,https://www.amazon.in/100uF-16V-Electrolytic-Capacitor/dp/B0F5MYTYQ3/,79,0.83
+Capacitors,0.1µF ceramic,2,TB6612 rails,https://www.amazon.in/0-1uF-104-Ceramic-Capacitor-Pack/dp/B0F5MYTYQ3/,79,0.83
+Hardware,M3 Screw Kit,1 set,Assorted sizes,https://www.amazon.in/gp/product/B0FQWLQMXV/,360,3.81
+DRIVE,12V geared DC Motor,4,12V 200 RPM,https://www.amazon.in/D-V-12V-200-RPM-Geared-Motor/dp/B07YNQSLKX/,500,5.29
+Cooling,DHT22 temp+humidity sensor,1,Fan controls,https://www.amazon.in/AM2302-Temperature-Humidity-Sensor-Module/dp/B0CXMJH34D/,160,1.69
+Resistors,100Ω resistor,1,Pull-up,https://www.amazon.in/100-Ohm-Resistor-Pack/dp/B09VH1K4GW/,80,0.85
+Wires,JST-XH connectors,4,Battery connectors,https://www.amazon.in/Electronic-Spices-Connector-2-5mm-Female/dp/B0BKWDKB1W/,109,1.15
+Wires,18AWG silicone wire,1m,High durability,https://www.amazon.in/gp/product/B09VLDN5LN/,300,3.17
+DRIVE,85mm Wheels,4,Wheels,https://www.amazon.in/INVENTO-Plastic-Robotic-Durable-Rubber/dp/B07YNQSLKX/,749,7.93
+Hardware,M3 standoffs,20,Standoffs,https://www.amazon.in/gp/product/B07T34Q6G6/,300,3.17
+Hardware,12×8 Perfboard,1,Prototype board,https://www.amazon.in/xcluma-Double-Copper-Prototype-Universal/dp/B073DF2CB9/,125,1.32
+Phone Mount,Rubber Bands,3,Holds phone,https://www.amazon.in/cart/smart-wagon/,150,1.59
+Charger,2S Li-ion charger,1,For battery,https://robu.in/product/lithium-battery-charger-8-4v-1a-with-dc-plug-2-indicators/,676,7.16
+Chassis,White PLA 1kg,1,Printed for chassis,https://www.amazon.in/WOL-3D-Filament-Improved-Formula/dp/B08D6N1HHK/,899,9.51
+TOTAL,,,,,,7857,85
