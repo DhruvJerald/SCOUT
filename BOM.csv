@@ -6,7 +6,7 @@ Power,Rocker switch ≥5A,1,Toggle type,https://www.amazon.in/Rocker-Switch-Togg
 Power,LM2596 Buck Converter,1,7.4V→5V,https://www.amazon.in/LM2596-DC-DC-Buck-Converter-Module/dp/B009P04YTO/,98,1.04
 Motor Drivers,TB6612FNG,2,Dual driver,Robu Services,249,2.64
 Monitoring,INA219,1,Current sensor,https://www.amazon.in/xcluma-INA219-I2C-Bi-Directional/dp/B07YNQSLKX/,275,2.92
-Monitoring,SSD1306 OLED 0.96",1,I2C OLED,https://www.amazon.in/Robocraze-Semiconductor-Accessory-Display/dp/B07Q7VZ716/,329,3.50
+Monitoring,"SSD1306 OLED 0.96\"",1,I2C OLED,Amazon.in,329,3.50
 Cooling,5V brushless fan (30–40mm),1,Exhaust fan,https://www.amazon.in/Electronic-Spices-40x40x10mm-Brushless-Exhaust/dp/B0BC8FLML8/,180,1.91
 Cooling,AO3400A MOSFET,1,Logic-level,https://www.amazon.in/AO3400-30V-5-8A-N-Channel-Mosfet/dp/B09VH1K4GW/,84,0.89
 Cooling,10kΩ resistor,1,Gate pulldown,https://www.amazon.in/10K-ohm-Watt-Resistor-Tolerance/dp/B09VH1K4GW/,74,0.78
