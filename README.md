@@ -108,6 +108,7 @@ The chassis has mounting holes and an I2C header for adding modules without rede
 1)Gather all components listed in the BOM and a Android device with a working SIM card with cellular connection
 
 2)3D print all the parts from https://github.com/DhruvJerald/SCOUT/tree/956e7d2e782e086f435cfa4e5dd025103bdec9e7/3D%20Prints and assemble it with M3 screws 
+using this final cad design as refrence https://cad.onshape.com/documents/bb327acbee40f2ee69b4a73d/w/27bea1cc711a9dabe8ca095b/e/9c1c2f5421d70ceec33e618a
 
 3)Add the Perfboard and the Electronics to the enclosure with M3 standoffs
 
