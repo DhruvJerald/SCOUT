@@ -146,4 +146,5 @@ using this final cad design as refrence https://cad.onshape.com/documents/bb327a
 
 ## NOTE
 This version dosent use a PCB as its required and will all be mounted on a perfboard but i do plan on making a proper PCB in the next version
+All the parts are to be printed by PETG (PLA works aswell)
 
