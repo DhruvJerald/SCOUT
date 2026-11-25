@@ -114,7 +114,7 @@ using this final cad design as refrence https://cad.onshape.com/documents/bb327a
 
 4)Wire it according to the schematic https://github.com/DhruvJerald/SCOUT/blob/956e7d2e782e086f435cfa4e5dd025103bdec9e7/Schematic_Rover.png
 
-5)Upload the firmware to the ESP (Not current one as its AI made and purely for proof of concept and not to be used in the final build)
+5)Upload the firmware to the ESP (Not current one as purely for proof of concept and not to be used in the final build)
 
 6)Set up VPS on PC side
 
@@ -144,4 +144,6 @@ using this final cad design as refrence https://cad.onshape.com/documents/bb327a
 
 ---
 
+## NOTE
+This version dosent use a PCB as its required and will all be mounted on a perfboard but i do plan on making a proper PCB in the next version
 
